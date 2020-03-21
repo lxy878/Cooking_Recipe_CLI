@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
+require_relative '../lib/cooking_recipe_cli.rb'
 
-puts "Hello here"
+CookingRecipeCli::CLI.new.call
