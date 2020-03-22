@@ -8,7 +8,9 @@ class:
   author
 
 action:
+  display a list of authors
   display a list of recipes with author
   display a list of recipes by seaching a specific author
   detail of a recipe
-  
+  display a list of recipes by seaching a types of meals?
+  reset type options?
