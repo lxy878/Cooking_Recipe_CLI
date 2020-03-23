@@ -29,14 +29,4 @@ class CookingRecipeCli::Recipe
     def save
         self.class.all << self
     end
-
-    def self.find_by_recipe(recipe_name)
-        self.all.find{|recipe| recipe.name == recipe_name}
-    end
-
-    def self.find_by_author(author_name)
-        author = CookingRecipeCli::Author.all.find {|author| author.name == author_name}
-        recipes = author.recipes
-    end
-    
 end
