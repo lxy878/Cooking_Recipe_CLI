@@ -3,7 +3,7 @@ class CookingRecipeCli::Recipe
     @@all = []
     def initialize(name, author_name, detail_url)
         @name = author
-        author=(author_name)
+        self.author=(author_name)
         @detail_url = detail_url
         @ingredients = []
         @directions = []
@@ -27,7 +27,7 @@ class CookingRecipeCli::Recipe
     end
 
     def save
-        Recipe.all << self
+        self.class.all << self
     end
 
     def self.find_by_recipe(recipe_name)

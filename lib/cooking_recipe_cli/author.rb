@@ -24,7 +24,7 @@ class CookingRecipeCli::Author
     end
 
     def add_recipe(recipe)
-        @recipes << recipes if @recipes.include?(recipe)
+        @recipes << recipe unless @recipes.include?(recipe)
     end
 
 end

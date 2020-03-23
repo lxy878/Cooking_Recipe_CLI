@@ -2,12 +2,15 @@ class CookingRecipeCli::Scraper
     def self.scrape_recipe_list(url)
         doc = open(url)
         # binding.pry
-        doc = Nokogiri::HTML(open(url)).css("div.recipe-results")
+        doc = Nokogiri::HTML(URI.open(url)).css("div.recipe-results")
         recipes = doc.css('div.card.collectable-tile.js-collectable-tile')
-        
-        title = a.css("h3 a").text
-        href = a.css('h3 a').attribute("href").value
-        author = a.css("div.meta a.username").text 
+        recipes.each do |recipe|
+            recipe_name = recipe.css("h3 a").text
+            href = recipe.css('h3 a').attribute("href").value
+            author_name = recipe.css("div.meta a.username").text 
+            CookingRecipeCli::Recipe.new(recipe_name, author_name, href)
+        end
+        puts CookingRecipeCli::Recipe.all.author.name
         # create author
         
         # create recipe
