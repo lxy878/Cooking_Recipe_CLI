@@ -1,7 +1,6 @@
 class CookingRecipeCli::Scraper 
     def self.scrape_recipe_list(url)
         doc = open(url)
-        # binding.pry
         doc = Nokogiri::HTML(URI.open(url)).css("div.recipe-results")
         recipes = doc.css('div.card.collectable-tile.js-collectable-tile')
         recipes.each do |recipe|
@@ -10,12 +9,7 @@ class CookingRecipeCli::Scraper
             author_name = recipe.css("div.meta a.username").text 
             CookingRecipeCli::Recipe.new(recipe_name, author_name, href)
         end
-        puts CookingRecipeCli::Recipe.all.author.name
-        # create author
-        
-        # create recipe
-            # recipe add author and href
-            # author add the current recipe
+        # puts CookingRecipeCli::Recipe.all[0].author.name
         # next page
     end
 

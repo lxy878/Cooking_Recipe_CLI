@@ -2,7 +2,7 @@ class CookingRecipeCli::Recipe
     attr_reader :author, :name, :detail_url, :ingredients, :directions
     @@all = []
     def initialize(name, author_name, detail_url)
-        @name = author
+        @name = name
         self.author=(author_name)
         @detail_url = detail_url
         @ingredients = []
