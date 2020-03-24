@@ -2,4 +2,4 @@
 require './lib/cooking_recipe_cli.rb'
 
 
-CookingRecipeCli::CLI.new.call
+CookingRecipeCli::Cli.new.call
