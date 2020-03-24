@@ -13,4 +13,4 @@ action:
   display a list of recipes by seaching a specific author
   detail of a recipe
   display a list of recipes by seaching a types of meals?
-  reset type options?
+  reset type options?dfd
