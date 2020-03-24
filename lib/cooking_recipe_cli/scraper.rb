@@ -25,7 +25,7 @@ class CookingRecipeCli::Scraper
         context = Nokogiri::HTML(open(url))
 
         # ingredients
-        ingreds =context.css('div.recipe__list.recipe__list--ingredients ul li')
+        ingreds = context.css('div.recipe__list.recipe__list--ingredients ul li')
         ingred_array = ingreds.collect do |ingred|
             ingred.text.gsub(/\n/, " ").strip   
         end

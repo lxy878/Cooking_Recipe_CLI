@@ -44,7 +44,6 @@ class CookingRecipeCli::Cli
             break if input != 'r'
             self.list_recipes(recipes)
         end 
-
     end
 
     def list_recipes(recipes_array=CookingRecipeCli::Recipe.all)

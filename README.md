@@ -1,43 +1,33 @@
 # CookingRecipeCli
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cooking_recipe_cli`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem is designed for people, who likes to cook or who wants to cook for themselive or others.   The gem works to use command lines searching the cooking recipes and displaying ingredients and detailed directions. 
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'cooking_recipe_cli'
-```
-
-And then execute:
+Execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install cooking_recipe_cli
-
 ## Usage
 
-TODO: Write usage instructions here
+Execute: 
+    $ ./bin/cooking_recipe_cli
 
-## Development
+Then:
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+1. Enter a number to display a recipe list.
+    * Choose a recipe number to display details.
+        * Enter 'r' to reload a recipe list.
+        * Enter any key to return the top menu.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/'lucky-subprogram-1873'/cooking_recipe_cli. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+2. Enter a number to display an author list, 
+    * Choose a author number
+        * Choose a recipe number to display details.
+        * Enter 'r' to reload a recipe list.
+        * Enter any key to return the top menu.
+    
+3. Enter 'q' to quit the program.
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the CookingRecipeCli project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/'lucky-subprogram-1873'/cooking_recipe_cli/blob/master/CODE_OF_CONDUCT.md).
