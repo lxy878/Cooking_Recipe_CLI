@@ -48,7 +48,7 @@ class CookingRecipeCli::Cli
 
     def list_recipes(recipes_array=CookingRecipeCli::Recipe.all)
         recipes = recipes_array.sort{ |a, b| a.name <=> b.name }
-        puts "\nRecipe List:".cyan
+        puts "\nRecipe List:".magenta
         recipes.each_with_index {|recipe, index| puts "#{index+1}. #{recipe.name} by #{recipe.author.name}".cyan}
         choose_recipe(recipes)
         recipes
@@ -67,7 +67,7 @@ class CookingRecipeCli::Cli
 
     def list_authors
         authors = CookingRecipeCli::Author.all.sort{|a, b| a.name <=> b.name}
-        puts "\nAuthor List:".cyan
+        puts "\nAuthor List:".magenta
         authors.each_with_index {|author, index| puts "#{index+1}. #{author.name}".cyan}
         choose_author(authors)
     end

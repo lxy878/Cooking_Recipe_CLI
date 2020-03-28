@@ -22,7 +22,7 @@ class CookingRecipeCli::Scraper
 
     def self.scrape_details(url, recipe)
         return recipe unless recipe.ingredients.empty? and recipe.directions.empty?
-        context = Nokogiri::HTML(open(url))
+        context = Nokogiri::HTML(URI.open(url))
 
         # ingredients
         ingreds = context.css('div.recipe__list.recipe__list--ingredients ul li')
