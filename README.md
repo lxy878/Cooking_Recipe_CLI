@@ -2,17 +2,22 @@
 
 This gem is designed for people, who likes to cook or who wants to cook for themselive or others.   The gem works to use command lines searching the cooking recipes and displaying ingredients and detailed directions. 
 
+## Screenshots/Demo
+
+<a href='https://drive.google.com/file/d/16S13IazlOfflVubJKLdSuxrYgS51rzk7/view?usp=sharing'>Demo</a>
+
 ## Installation
 
 Execute:
-
-    $ bundle
-
+```
+$ bundle
+```
 ## Usage
 
 Execute: 
-    $ ./bin/cooking_recipe_cli
-
+```
+$ ./bin/cooking_recipe_cli
+```
 Then:
 
 1. Enter a number to display a recipe list.
